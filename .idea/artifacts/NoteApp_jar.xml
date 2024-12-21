@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NoteApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NoteApp_jar</output-path>
+    <root id="archive" name="NoteApp.jar">
+      <element id="module-output" name="NoteApp.main" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/IsDayOff-2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' } // Подключение JitPack
+}
+
+dependencies {
+    implementation files ('libs/IsDayOff-2.0.jar') // Подключение библиотеки IsDayOff
+}
+application {
+    // Укажите главный класс с методом main
+    mainClass = 'com.example.noteapp.Main'
+}
+
+jar {
+    manifest {
+        attributes(
+                // Укажите путь к главному классу с методом main
+                'Main-Class': 'com.example.noteapp.Main'
+        )
+    }
+}
